@@ -1,9 +1,9 @@
 {
   "name": "gdc-modal-component",
   "version": "0.1.0",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
+  "main": "src/lib/index.js",
+  "module": "src/lib/index.js",
+  "files": [ "src", "README.md" ],
   "repository": {
     "type": "git",
     "url": "https://github.com/Gautier-DC/GautierDeConinck_14_01022022_npm_modal.git"
@@ -24,6 +24,6 @@
     "build-examples": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
+    "build": "babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__"
   }
 }
