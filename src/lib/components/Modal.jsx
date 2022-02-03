@@ -19,7 +19,7 @@ export default function Modal({ show, title, children, onClose }) {
   }, []);
 
   return ReactDOM.createPortal(
-    <CSSTransition in={show} unmountOnExit timeout={{ enter: 0, exit: 300 }}>
+    <div className={`modal ${show ? 'show' : ''}`} onClick={onClose}>
       <div className="modal" onClick={onClose}>
         <div className="modal-content" onClick={(e) => e.stopPropagation()}>
           {title && <div className="modal-header">
@@ -31,7 +31,7 @@ export default function Modal({ show, title, children, onClose }) {
           </div>
         </div>
       </div>
-    </CSSTransition>,
+    </div>,
     document.getElementById("root")
   );
 }

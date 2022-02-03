@@ -13,7 +13,7 @@
   justify-content: center;
 }
 
-.modal.enter-done {
+.modal.show {
   opacity: 1;
   pointer-events: visible;
 }
@@ -31,12 +31,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.modal.enter-done .modal-content {
+.modal.show .modal-content {
   transform: translateY(0);
-}
-
-.modal.exit .modal-content {
-  transform: translateY(-200px);
 }
 
 .modal-header,
