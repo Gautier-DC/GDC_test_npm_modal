@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { useEffect } from "react";
 import { CSSTransition } from "react-transition-group";
-import "./Modal.css";
+import "../../../src/lib/components/Modal.css";
 
 export default function Modal({ show, title, children, onClose }) {
   const closeOnEscape = (e) => {
